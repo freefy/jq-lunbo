@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.wrapper{
+    width:600px;
+    height:300px;
+    border:1px solid black;
+    position:relative;
+    left:50%;
+    top:150px;
+    margin-left:-300px;
+    overflow:hidden;
+}
+.box{
+    width:600px;
+    height:300px;
+    position:absolute;
+    left:0;
+    top:0;
+
+    overflow:hidden;
+}
+.box .sliderPage{
+    position:absolute;
+    left:0;
+    top:0;
+    width:3000px;
+    height:300px;
+}
+.sliderPage li{
+    float:left;
+    width:590px;
+    height:290px;
+    padding:5px;
+}
+.sliderPage li img{
+    width:590px;
+    height:290px;
+}
+.btn{
+    font-size:40px;
+
+}
+.leftBtn,.rightBtn{
+    position:absolute;
+    top:140px;
+    width:60px;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    cursor:pointer;
+    background-color:#eed;
+    border-radius:12px;
+    
+}
+.btn{
+    display:none;
+}
+.leftBtn{
+    float:left;
+    left:20px;
+}
+.rightBtn{
+    float:right;
+    right:20px; 
+}
+
+.sliderList ul{
+    position:absolute;
+    width:590px;
+    bottom:10px;
+    left:0;
+    text-align:center;
+}
+.sliderList li{
+    display:inline-block;
+    /* float:left; */
+    width:30px;
+    height:30px;
+    margin-right:5px;
+    text-align:center;
+    line-height:30px;
+    background-color:yellow;
+    cursor:pointer;
+}
+.sliderList li.active{
+    background-color:red;
+}
+
+
